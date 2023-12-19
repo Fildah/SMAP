@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Alergen Highlighter",
+  "version": "1.0",
+  "description": "Zvýrazňuje text podle vybraného alergenu.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "background",
+    "storage",
+    "contextMenus",
+    "<all_urls>"
+  ],
+  "icons": {
+    "128": "/resources/icon.png",
+    "16": "/resources/icon.png",
+    "48": "/resources/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "/resources/icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
