@@ -3,14 +3,7 @@
   "name": "Alergen Highlighter",
   "version": "1.0",
   "description": "Zvýrazňuje text podle vybraného alergenu.",
-  "permissions": [
-    "tabs",
-    "activeTab",
-    "background",
-    "storage",
-    "contextMenus",
-    "<all_urls>"
-  ],
+  "permissions": ["tabs", "activeTab", "storage", "contextMenus"],
   "icons": {
     "128": "/resources/icon.png",
     "16": "/resources/icon.png",
