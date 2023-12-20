@@ -72,9 +72,7 @@ function applyHighlight() {
       "mekkysi",
     ],
     function (data) {
-      if (data.lepek) {
-        walk(document.body, data);
-      }
+      walk(document.body, data);
     }
   );
 }
